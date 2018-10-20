@@ -2,4 +2,11 @@
 
 {% block body %}
 <h1>HTML body goes here.</h1>
+
+<form method="post" novalidate>
+  {% csrf_token %}
+  {{ form }}
+  <button type="submit">Submit</button>
+</form>
+
 {% endblock %}
