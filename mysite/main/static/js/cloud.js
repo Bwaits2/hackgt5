@@ -32,4 +32,4 @@ function draw(words) {
         return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
       })
       .text(function(d) { return d.text; });
-} 
+}
